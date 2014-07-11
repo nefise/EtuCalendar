@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <LinearLayout
+        android:id="@+id/autoCompleteLayoutCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/quickSearchCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/courseSearch" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/imageButtonCourse"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/plus" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/autoCompleteLayoutCourse"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corner_button"
+            android:text="@string/course_courseProgram"
+            android:textColor="@color/list_item_title" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.47"
+            android:background="@drawable/rounded_corner_button"
+            android:text="@string/course_courseTakers"
+            android:textColor="@color/list_item_title" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.47"
+            android:background="@drawable/rounded_corner_button"
+            android:text="@string/course_courseTakerPrograms"
+            android:textColor="@color/list_item_title" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
